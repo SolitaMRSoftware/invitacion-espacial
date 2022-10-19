@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--hace q en un dispositivo pequeño tenga un buen tamaño-->
+    <title>Mi Cumpleaños</title>
+    <meta name="description" content="Invitación Virtual"> <!--va a dar una descripcion de que trata este sitio web-->
+
+    <!--PREFETCH. Va a cargar la sig. pagina a la q el usuario iria-->
+     <link rel="prefetch" href="ceremonia.html" as="document">
+
+    <!--PRELOAD. Va a cargar algunos elementos q es necesario q carguen inmediatamente-->
+    <link rel="preload" href="css/normalize.css" as="style"> <!--le decimos q queremos aplicarle PRELOAD a una hoja de estilos-->
+    <link rel="stylesheet" href="css/normalize.css"> <!--enlazo normalize-->
+
+    <link rel="preload" href="https://fonts.googleapis.com">
+    <link rel="preload" href="https://fonts.gstatic.com" crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Chango&family=Frijole&family=Londrina+Shadow&family=Loved+by+the+King&display=swap" rel="stylesheet"> <!--enlazo la letra de google-->
+
+    <link rel="preload" href="css/estilo.css" as="style">
+    <link rel="stylesheet" href="css/estilo.css"> <!--enlazo la hoja de estilos-->
+</head>
+<body>
+    <header class="header">
+        <audio id="mireproductor" loop>
+            <source src="music/infantil.mpeg" type="audio/mpeg">
+        </audio>
+        
+        <div class="contenedor_boton">
+            <button onclick="document.getElementById ('mireproductor').play()" class="play" id class="fa fa-play"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-player-play" width="20" height="20" viewBox="0 0 24 24" stroke-width="1" stroke="#fd0061" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M7 4v16l13 -8z" />
+            </svg>
+            </button>
+            
+            <button onclick="document.getElementById ('mireproductor').load()"  class="exit" id class="fa fapower-of"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-player-stop" width="20" height="20" viewBox="0 0 24 24" stroke-width="1" stroke="#fd0061" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <rect x="5" y="5" width="14" height="14" rx="2" />
+            </svg>
+            </button>
+        </div>
+    </header> 
+
+    
+
+    <div class="mejorar">
+        <p class="nombre">Mateo <img class="satelite" src="img/satellite.png" alt="">
+        </p>
+        
+        <section class="container">
+            <h1 class="conteo">FALTAN:</h1>
+            <div class="contador">
+                <div>
+                    <p id="days">00</p>
+                    <span>días</span>
+                </div>
+                <div>
+                    <p id="hours">00</p>
+                    <span>horas</span>
+                </div>
+                <div>
+                    <p id="minutes">00</p>
+                    <span>minutos</span>
+                </div>
+                <div>
+                    <p id="seconds">00</p>
+                    <span>segundos</span>
+                </div>
+            </div>
+        </section>
+        <section class="final">
+            <h2>¡HOY ES MI CUMPLE!</h2>
+        </section>
+
+        <p class="conteo">Para mi primer cumpleaños!!!</p>
+        
+    </div>
+    
+
+    <div class="contenedor contenido-principal">
+        <main class="">
+            <picture>
+                <source loading="lazy" srcset="img/alienazul.png" type="image/webp">
+                <img  loading="lazy" class="alienazul"  src="img/alienazul.png" alt="imagen nosotros">
+            </picture>
+        </main>
+
+        <aside>
+            <p class="ustedes">Mateo llegó y toda nuestra vida cambió. <br>
+                Después de un año de prácticas como papás, estamos preparados para celebrar 
+                su primer cumpleaños <br> ¿venís?
+            </p> 
+            <div class="dibujo ">
+                <main class="marte">
+                    <picture>
+                        <source loading="lazy" srcset="img/naveceleste.png" type="image/webp">
+                        <div class="iconos nave">
+                            <img loading="lazy" class="nave" src="img/naveceleste.png" alt="iconos">
+                        </div>
+                    </picture>
+                </main>
+            </div>
+        </aside>
+    </div>
+
+
+    <section id="lineup" class="lineup">
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario rock bg-amarillo">
+                <p class="nombre-escenario">¿Cuándo?</p>
+                <ul class="calendario">
+                    <li>
+                        <span>10 de febrero</span>
+                    </li>
+                    <li>
+                        <span>de 16:00 a 19:00</span>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar" width="72" height="72" viewBox="0 0 24 24" stroke-width="1" stroke="#F28123" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <rect x="4" y="5" width="16" height="16" rx="2" />
+                            <line x1="16" y1="3" x2="16" y2="7" />
+                            <line x1="8" y1="3" x2="8" y2="7" />
+                            <line x1="4" y1="11" x2="20" y2="11" />
+                            <line x1="11" y1="15" x2="12" y2="15" />
+                            <line x1="12" y1="15" x2="12" y2="18" />
+                          </svg>
+                    </li>          
+                </ul>
+            </div><!-- aca termina .escenario-->
+       
+            <div class="escenario edm bg-verde">
+                <p class="nombre-escenario">¿Dónde?</p>            
+                <ul class="calendario">                   
+                    <li>
+                        <span>En el Salón Girasol</span>
+                    </li>
+                    <li>
+                        <span>Coronel Díaz 1234</span>
+                   </li>
+                   <li>
+                    <a href="https://maps.app.goo.gl/GeszsJ5LTpkkR1o86">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="72" height="72" viewBox="0 0 24 24" stroke-width="1" stroke="#FFC300" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <circle cx="12" cy="11" r="3" />
+                            <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                          </svg>
+                    </a>
+                   </li>
+                </ul>
+            </div><!-- aca termina .escenario-->
+        </div><!--aca termina .escenario-contenedor-->
+    </section>
+
+    <div class="contenedor contenido-principal">
+        <main class="">
+            <picture>
+                <source loading="lazy" srcset="img/robot.png" type="image/webp">
+                <img  class="alienazul" loading="lazy" src="img/robot.png" alt="imagen nosotros">
+            </picture>
+        </main>
+
+        <aside>
+            <p class="ustedes">Como esperamos contar con tu presencia, necesitamos tu confirmación de asistencia antes del 10 de enero
+                
+            </p> 
+            <div class="calendario">
+                <a class="navegacion__enlace" href="https://wa.me/546">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    class="icon icon-tabler icon-tabler-brand-whatsapp" 
+                    width="72" height="72" viewBox="0 0 24 24" stroke-width="1" stroke="#FFC300" 
+                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                    <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
+                  </svg>
+                </a>
+            </div>
+        </aside>
+    </div>
+                
+    <div class="ustedes">
+        <p >Te espero, no faltes!!!</p>
+        <picture>
+            <source loading="lazy" srcset="img/cartoon.png" type="image/webp">
+            <img loading="lazy" class="nave" src="img/cartoon.png" alt="iconos">
+        </picture>
+    </div>
+
+
+    <footer class="footer">
+        <p>Diseño exclusivo de <a href="https://www.instagram.com/loscodigosdeana/">Los códigos de Ana 
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-click" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#5f8580" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <line x1="3" y1="12" x2="6" y2="12" />
+            <line x1="12" y1="3" x2="12" y2="6" />
+            <line x1="7.8" y1="7.8" x2="5.6" y2="5.6" />
+            <line x1="16.2" y1="7.8" x2="18.4" y2="5.6" />
+            <line x1="7.8" y1="16.2" x2="5.6" y2="18.4" />
+            <path d="M12 12l9 3l-4 2l-2 4l-3 -9" />
+          </svg>
+          </a> | Todos los derechos reservados 2022
+        </p>
+    </footer>
+
+   
+
+
+ <script src="js/modernizr.js"></script> 
+ <script src="javascript/app.js"></script>
+
+
+</body>
+</html>
